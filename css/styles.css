@@ -1,0 +1,90 @@
+/*
+Project Name: badger_learning
+Client: Ourselves!
+Author: Clementine Brown, Jun Taoka, Sasha Ward, Karima Saad
+*/
+
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear:both;
+}
+.is-hidden {
+  display: none;
+}
+.is-visible {
+  display: block;
+}
+
+/******************************************
+/* SENSIBLE DEFAULTS
+/*******************************************/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+	padding: 0;
+}
+img {
+  max-width: 100%;
+}
+html {
+  font-size: 16px;
+  color: #4C5664;
+}
+
+/******************************************
+/* GRID
+/*******************************************/
+
+.grid-row {
+
+}
+.grid-column {
+  float: left;
+}
+.grid-whole {width: 100%}
+.grid-half {width: 50%}
+.grid-third {width: 33.33%}
+.grid-quarter {width: 25%;}
+.grid-fifth {width: 20%}
+.grid-two-third {width: 66.66%}
+.grid-three-quarter {width: 75%}
+.grid-two-fifth {width: 40%}
+.grid-three-fifth {width: 60%}
+.grid-four-fifth {width: 80%}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.container {
+  max-width: 1210px;
+  margin: 2rem auto;
+  position: relative;
+}
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+p {
+  font-size: .8rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-size: 4rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  letter-spacing: .2rem;
+  color: #4C5664;
+}
