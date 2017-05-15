@@ -68,20 +68,8 @@ html {
 
 .container {
   max-width: 1210px;
-  margin: 2rem;
+  margin: 2rem auto;
   position: relative;
-}
-
-.left {
-  float: left;
-  width: 40%;
-  display: inline;
-}
-
-.right {
-  float: right;
-  width: 40% auto;
-  display: inline;
 }
 
 /******************************************
