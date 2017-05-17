@@ -76,31 +76,7 @@ html {
 /* TYPOGRAPHY
 /*******************************************/
 
-p {
-  font-size: .8rem;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-}
-h1 {
-  font-size: 4rem;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
-  letter-spacing: .2rem;
-  color: #4C5664;
-}
-h2 {
-  font-size: 2rem;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
-  color: #4C5664;
-}
 
 /******************************************
 /* IMAGES
 /*******************************************/
-
-.badger {
-  max-width: 100%;
-  padding: 1.5rem 0;
-}
