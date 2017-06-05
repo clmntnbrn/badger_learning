@@ -39,6 +39,7 @@ img {
 html {
   font-size: 16px;
   color: #4C5664;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /******************************************
@@ -76,7 +77,49 @@ html {
 /* TYPOGRAPHY
 /*******************************************/
 
+h1 {
+  font-family: 'Bitter', serif;
+}
 
 /******************************************
-/* IMAGES
+/* HEADER
 /*******************************************/
+
+header {
+  padding: 2em;
+}
+
+
+/******************************************
+/* SIDE NAV
+/*******************************************/
+
+.side-nav {
+  padding: 0 0 0 2em;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/******************************************
+/* FORM ELEMENTS
+/*******************************************/
+
+label {
+  font-size: 1.1em;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 7px;
+}
+
+.field {
+  height: 44px;
+  width: 300px;
+  border: 1.2px solid #4C5664;
+}
+
+.dropdown {
+  width: 50%;
+  box-shadow: none;
+}
