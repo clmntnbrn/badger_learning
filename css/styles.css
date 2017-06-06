@@ -1,5 +1,5 @@
 /*
-Project Name: badger_learning
+Project Name: RB-UXD-CODE-LIBRARY
 Client: Ourselves!
 Author: Clementine Brown, Jun Taoka, Sasha Ward, Karima Saad
 */
@@ -37,7 +37,9 @@ img {
   max-width: 100%;
 }
 html {
-  font-size: 16px;
+  font-size: .8rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   color: #4C5664;
   font-family: 'Open Sans', sans-serif;
 }
@@ -77,8 +79,17 @@ html {
 /* TYPOGRAPHY
 /*******************************************/
 
+p {
+  font-size: .8rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
 h1 {
+  font-size: 4rem;
   font-family: 'Bitter', serif;
+  font-weight: 800;
+  letter-spacing: .2rem;
+  color: #4C5664;
 }
 
 /******************************************
@@ -89,6 +100,28 @@ header {
   padding: 2em;
 }
 
+/******************************************
+/* BUTTONS
+/*******************************************/
+
+.btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  color: #f8f8f8;
+  font-size: 20px;
+  background: #22D69B;
+  padding: 10px 20px 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  max-width: 200px;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #1ba678;
+  text-decoration: none;
+}
 
 /******************************************
 /* SIDE NAV
