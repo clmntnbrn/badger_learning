@@ -41,6 +41,7 @@ html {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #4C5664;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /******************************************
@@ -77,6 +78,7 @@ html {
 /******************************************
 /* TYPOGRAPHY
 /*******************************************/
+<<<<<<< HEAD
 p {
   font-size: .8rem;
   font-family: 'Open Sans', sans-serif;
@@ -84,14 +86,19 @@ p {
 }
 h1 {
   font-size: 4rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   font-weight: 800;
   letter-spacing: .2rem;
   color: #4C5664;
 }
+
 /******************************************
-/* IMAGES
+/* HEADER
 /*******************************************/
+
+header {
+  padding: 2em;
+}
 
 /******************************************
 /* BUTTONS
@@ -106,6 +113,7 @@ h1 {
   font-size: 20px;
   background: #22D69B;
   padding: 10px 20px 10px 20px;
+  margin-top: 10px;
   text-decoration: none;
   max-width: 200px;
   text-align: center;
@@ -114,4 +122,38 @@ h1 {
 .btn:hover {
   background: #1ba678;
   text-decoration: none;
+}
+
+/******************************************
+/* SIDE NAV
+/*******************************************/
+
+.side-nav {
+  padding: 0 0 0 2em;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/******************************************
+/* FORM ELEMENTS
+/*******************************************/
+
+label {
+  font-size: 1.1em;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 7px;
+}
+
+.field {
+  height: 44px;
+  width: 300px;
+  border: 1.2px solid #4C5664;
+}
+
+.dropdown {
+  width: 50%;
+  box-shadow: none;
 }
