@@ -37,7 +37,7 @@ img {
   max-width: 100%;
 }
 html {
-  font-size: .8rem;
+  font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #4C5664;
@@ -74,13 +74,24 @@ html {
   margin: 2rem auto;
   position: relative;
 }
+.spacer{
+  margin-top: 3em;
+  margin-bottom: 3em;
+  /*border-top: 1px solid #cccccc;*/
+}
 
 /******************************************
 /* TYPOGRAPHY
 /*******************************************/
 
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
 p {
-  font-size: .8rem;
+  font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
@@ -112,7 +123,6 @@ header {
   font-size: 20px;
   background: #22D69B;
   padding: 10px 20px 10px 20px;
-  margin-top: 10px;
   text-decoration: none;
   max-width: 200px;
   text-align: center;
@@ -129,30 +139,34 @@ header {
 
 .side-nav {
   padding: 0 0 0 2em;
+  display: block;
 }
-
-a:hover {
-  text-decoration: none;
+.list {
+  margin-bottom: 1rem;
 }
-
 /******************************************
 /* FORM ELEMENTS
 /*******************************************/
 
 label {
-  font-size: 1.1em;
-  font-weight: 400;
+  /*font-size: 1em;
+  font-weight: 400;*/
   display: block;
   margin-bottom: 7px;
 }
 
 .field {
   height: 44px;
-  width: 300px;
+  width: 50%;
   border: 1.2px solid #4C5664;
 }
 
 .dropdown {
-  width: 50%;
   box-shadow: none;
+  border: 1.2px solid #4C5664;
+}
+
+form input {
+  border: 1.2px solid #4C5664;
+  margin-bottom: 1rem;
 }
