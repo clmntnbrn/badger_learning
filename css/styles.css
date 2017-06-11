@@ -126,6 +126,7 @@ header {
   text-decoration: none;
   max-width: 200px;
   text-align: center;
+  transition: all 0.3s ease 0s;
 }
 
 .btn:hover {
