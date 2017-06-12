@@ -25,23 +25,32 @@
 
     <div class="grid-row">
       <div class="side-nav grid-column grid-third">
-        <a href="#">Form elements</a>
+        <div class="list"><a href="#">Form elements</a></div>
+        <div class="list"><a href="#">Typography</a></div>
+        <div class="list"><a href="#">Placeholders</a></div>
       </div>
       <div class="grid-column grid-two-third">
-        <div>
-          <label for="dropdown">This is a dropdown</label>
-          <select name="dropdown" class="dropdown field">
-            <option value="value 1">Value 1</option>
-            <option value="value 2">Value 2</option>
-            <option value="value 3">Value 3</option>
-            <option value="value 4">Value 4</option>
-            <option value="value 5">Value 5</option>
-            <option value="value 6">Value 6</option>
-            <option value="value 7">Value 7</option>
-          </select>
-          <div class="btn">
-            I'm a button
-          </div>
+        <label for="dropdown">This is a dropdown:</label>
+        <select name="dropdown" class="dropdown field">
+          <option value="value 1">Value 1</option>
+          <option value="value 2">Value 2</option>
+          <option value="value 3">Value 3</option>
+          <option value="value 4">Value 4</option>
+          <option value="value 5">Value 5</option>
+          <option value="value 6">Value 6</option>
+          <option value="value 7">Value 7</option>
+        </select>
+        <div class="spacer">
+          <label for="btn">This is a button:</label>
+          <div class="btn">I'm a button</button>
+        </div>
+        <form class="spacer">
+          <label for="firstname">First name:</label>
+          <input type="text" name="firstname" class="field">
+          <label for="lastname">Last name:</label>
+          <input type="text" name="lastname" class="field">
+        </form>
+        <div class="spacer">
         </div>
       </div>
     </div>
