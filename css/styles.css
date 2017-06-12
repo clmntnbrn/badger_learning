@@ -162,6 +162,10 @@ label {
   border: 1.2px solid #4C5664;
 }
 
+.field:last-child {
+  margin-bottom: 0px;
+}
+
 .dropdown {
   box-shadow: none;
   border: 1.2px solid #4C5664;
@@ -170,4 +174,10 @@ label {
 form input {
   border: 1.2px solid #4C5664;
   margin-bottom: 1rem;
+}
+
+.radioitem {
+  display: inline-block;
+  margin-top: .5rem;
+  margin-left: .3rem;
 }
