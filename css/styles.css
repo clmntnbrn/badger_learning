@@ -145,7 +145,7 @@ select,
 input {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  border-radius: 0px !important;
+  border-radius: 0px
   box-shadow: none;
   border: 1.2px solid #4C5664;
   height: 44px;
