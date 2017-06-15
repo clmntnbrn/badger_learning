@@ -7,8 +7,9 @@
   	<title>UXD Code Toolkit</title>
   	<meta name="Practice!"/>
 
-  	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 
     <!-- font links -->
@@ -24,14 +25,16 @@
     </header>
 
     <div class="grid-row">
-      <div class="side-nav grid-column grid-third">
-        <div class="list"><a href="#">Form elements</a></div>
-        <div class="list"><a href="#">Typography</a></div>
-        <div class="list"><a href="#">Placeholders</a></div>
-      </div>
-      <div class="grid-column grid-two-third">
+      <section class="side-nav grid-column grid-third">
+        <ul>
+          <li><a href="#">Form elements</a></li>
+          <li><a href="#">Typography</a></li>
+          <li><a href="#">Placeholders</a></li>
+        </ul>
+      </section>
+      <section class="grid-column grid-two-third">
         <label for="dropdown">This is a dropdown:</label>
-        <select name="dropdown" class="dropdown field">
+        <select name="dropdown" class="spacer">
           <option value="value 1">Value 1</option>
           <option value="value 2">Value 2</option>
           <option value="value 3">Value 3</option>
@@ -40,32 +43,30 @@
           <option value="value 6">Value 6</option>
           <option value="value 7">Value 7</option>
         </select>
-        <div class="spacer">
-          <label for="btn">This is a button:</label>
-          <div class="btn">I'm a button</button>
-        </div>
+        <label for="button">This is a button:</label>
+        <button name="button" class="spacer">I'm a button</button>
         <form class="spacer">
           <label for="firstname">First name:</label>
-          <input type="text" name="firstname" class="field">
+          <input type="text" name="firstname">
           <label for="lastname">Last name:</label>
-          <input type="text" name="lastname" class="field">
+          <input type="text" name="lastname">
         </form>
-        <div class="spacer">
-          <label >This is a radio list:</label>
+        <form class="spacer">
+          <label>This is a radio list:</label>
           <div>
             <input type="radio" name="examplelist" value="You can only">
-              <label class="radioitem" for="youcanonly">You can only</label>
+            <label class="radioitem" for="youcanonly">You can only</label>
           </div>
           <div>
             <input type="radio" name="examplelist" value="Select one">
-              <label class="radioitem" for="radio2">Select one</label>
+            <label class="radioitem" for="radio2">Select one</label>
           </div>
           <div>
             <input type="radio" name="examplelist"  value="From this list">
-              <label class="radioitem" for="radio3">From this list</label>
+            <label class="radioitem" for="radio3">From this list</label>
           </div>
-        </div>
-      </div>
+        </form>
+      </section>
     </div>
 
   </body>
