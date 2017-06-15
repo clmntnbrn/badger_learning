@@ -33,9 +33,11 @@ Author: Clementine Brown, Jun Taoka, Sasha Ward, Karima Saad
   margin: 0;
 	padding: 0;
 }
+
 img {
   max-width: 100%;
 }
+
 html {
   font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
@@ -53,11 +55,12 @@ html {
 /*******************************************/
 
 .grid-row {
-
 }
+
 .grid-column {
   float: left;
 }
+
 .grid-whole {width: 100%}
 .grid-half {width: 50%}
 .grid-third {width: 33.33%}
@@ -77,10 +80,9 @@ html {
   max-width: 1210px;
   margin: 2rem auto 0 auto;
 }
+
 .spacer{
-  margin-top: 3em;
-  margin-bottom: 3em;
-  /*border-top: 1px solid #cccccc;*/
+  margin-bottom: 4rem;
 }
 
 .main {
@@ -94,19 +96,22 @@ html {
 a {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 p {
   font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
+
 h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-family: 'Bitter', serif;
   font-weight: 800;
-  letter-spacing: .2rem;
+  letter-spacing: .1rem;
   color: #4C5664;
 }
 
@@ -150,28 +155,33 @@ header {
   padding: 0 0 0 2em;
   display: block;
 }
-.list {
+
+ul li {
+  list-style: none;
   margin-bottom: 1rem;
 }
+
 /******************************************
 /* FORM ELEMENTS
 /*******************************************/
 
 label {
-  /*font-size: 1em;
+  /*font-size: 1rem;
   font-weight: 400;*/
   display: block;
-  margin-bottom: 7px;
+  margin-bottom: 0.5rem;
 }
 
-.field {
+select,
+input {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px
+  box-shadow: none;
+  border: 1.2px solid #4C5664;
   height: 44px;
   width: 50%;
-  border: 1.2px solid #4C5664;
-}
-
-.field:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 1rem;
 }
 
 .dropdown {
@@ -179,15 +189,35 @@ label {
   border: 1.2px solid #4C5664;
 }
 
-form input {
-  border: 1.2px solid #4C5664;
-  margin-bottom: 1rem;
+button {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  color: #f8f8f8;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  background: #22D69B;
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  max-width: 200px;
+  min-width: 150px;
+  text-align: center;
+  transition: background 0.3s ease 0s;
+  border: 0px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1ba678;
+  text-decoration: none;
 }
 
 .radioitem {
-  display: inline-block;
+  display: inline;
   margin-top: .5rem;
-  margin-left: .3rem;
+  vertical-align: middle;
+  /*float: left;*/
+  /*margin-left: .3rem;*/
 }
 
 /******************************************
