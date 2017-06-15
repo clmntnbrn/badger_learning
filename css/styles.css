@@ -44,6 +44,10 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
+/*body {
+  margin: 2rem;
+}*/
+
 /******************************************
 /* GRID
 /*******************************************/
@@ -71,13 +75,16 @@ html {
 
 .container {
   max-width: 1210px;
-  margin: 2rem auto;
-  position: relative;
+  margin: 2rem auto 0 auto;
 }
 .spacer{
   margin-top: 3em;
   margin-bottom: 3em;
   /*border-top: 1px solid #cccccc;*/
+}
+
+.main {
+  margin-left: 2rem;
 }
 
 /******************************************
@@ -108,7 +115,8 @@ h1 {
 /*******************************************/
 
 header {
-  padding: 2em;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
 }
 
 /******************************************
@@ -138,7 +146,7 @@ header {
 /* SIDE NAV
 /*******************************************/
 
-.side-nav {
+.side {
   padding: 0 0 0 2em;
   display: block;
 }
@@ -180,4 +188,13 @@ form input {
   display: inline-block;
   margin-top: .5rem;
   margin-left: .3rem;
+}
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+@media only screen and (max-width : 768px) {
+  .main {
+    margin-top: 2rem;
+  }
 }

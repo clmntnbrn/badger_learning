@@ -8,11 +8,36 @@ Author: Clementine Brown, Jun Taoka, Sasha Ward, Karima Saad
 /* FLEXBOX CLASSES
 /*******************************************/
 
-body {
+.container {
   display: flex;
   flex-direction: column;
 }
 
-header {
+header,
+.row {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+}
+
+.main {
+  flex-grow: 3;
+}
+
+@media only screen and (max-width : 768px) {
+
+  .row {
+    flex-direction: column;
+  }
+
+  .list {
+    -ms-align-items: center;
+    align-items: center;
+  }
+
+
 }
