@@ -1,0 +1,43 @@
+/*
+Project Name: RB-UXD-CODE-LIBRARY
+Client: Ourselves!
+Author: Clementine Brown, Jun Taoka, Sasha Ward, Karima Saad
+*/
+
+/******************************************
+/* FLEXBOX CLASSES
+/*******************************************/
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+}
+
+.main {
+  flex-grow: 3;
+}
+
+@media only screen and (max-width : 768px) {
+
+  .row {
+    flex-direction: column;
+  }
+
+  .list {
+    -ms-align-items: center;
+    align-items: center;
+  }
+
+
+}

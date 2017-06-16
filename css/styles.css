@@ -42,31 +42,9 @@ html {
   font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  color: #4C5664;
+  color: #212121;
   font-family: 'Open Sans', sans-serif;
 }
-
-/******************************************
-/* GRID
-/*******************************************/
-
-.grid-row {
-}
-
-.grid-column {
-  float: left;
-}
-
-.grid-whole {width: 100%}
-.grid-half {width: 50%}
-.grid-third {width: 33.33%}
-.grid-quarter {width: 25%;}
-.grid-fifth {width: 20%}
-.grid-two-third {width: 66.66%}
-.grid-three-quarter {width: 75%}
-.grid-two-fifth {width: 40%}
-.grid-three-fifth {width: 60%}
-.grid-four-fifth {width: 80%}
 
 /******************************************
 /* LAYOUT
@@ -74,12 +52,25 @@ html {
 
 .container {
   max-width: 1210px;
-  margin: 2rem auto;
-  position: relative;
+  padding-top: 2rem;
+  margin: 0 auto 0 auto;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 1px 1px rgba(0,0,0,0.05);
+  height: 100vh;
 }
 
 .spacer{
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+}
+
+.main {
+  margin: 2rem 0 0 2rem;
+}
+
+.side {
+  padding: 2rem 0 0 2rem;
+  display: block;
+  /*background-color: #22D69B;*/
 }
 
 /******************************************
@@ -91,21 +82,27 @@ a {
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: #FC1D42
+  color: #FC1D42;
 }
 
-p {
+/*a:visited {
+  color: #212121;
+}*/
+
+/*p {
   font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-}
+}*/
 
 h1 {
   font-size: 2.5rem;
   font-family: 'Bitter', serif;
   font-weight: 800;
   letter-spacing: .1rem;
-  color: #4C5664;
+  color: #212121;
 }
 
 /******************************************
@@ -113,17 +110,13 @@ h1 {
 /*******************************************/
 
 header {
-  padding: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
 }
 
 /******************************************
 /* SIDE NAV
 /*******************************************/
-
-.side-nav {
-  padding: 0 0 0 2rem;
-  display: block;
-}
 
 ul li {
   list-style: none;
@@ -147,15 +140,11 @@ input {
   -moz-border-radius: 0;
   border-radius: 0px
   box-shadow: none;
-  border: 1.2px solid #4C5664;
+  border: 1.2px solid #212121;
   height: 44px;
   width: 50%;
   margin-bottom: 1rem;
-}
-
-.dropdown {
-  box-shadow: none;
-  border: 1.2px solid #4C5664;
+  background-color: #ffffff;
 }
 
 button {
@@ -181,10 +170,24 @@ button:hover {
   text-decoration: none;
 }
 
-.radioitem {
+.radioLabel {
   display: inline;
   margin-top: .5rem;
-  vertical-align: middle;
   /*float: left;*/
   /*margin-left: .3rem;*/
+}
+
+.radioButton {
+  vertical-align: middle;
+  max-width: 3rem;
+  margin-bottom: 0;
+}
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+@media only screen and (max-width : 768px) {
+  .main {
+    margin-top: 2rem;
+  }
 }
