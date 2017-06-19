@@ -1,0 +1,56 @@
+.acc-group {
+  max-width: 30em;
+  width: 100%;
+}
+
+.acc-title {
+  padding-bottom: 0.5em;
+}
+
+.acc {
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+.acc input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -999;
+  transition: background-color 0.5s ease;
+}
+
+.acc label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  background: #22D69B;
+  padding: 0.8rem 1.2rem;
+  color: white;
+  transition: background-color 0.5s ease;
+  margin: 0;
+}
+
+.acc input:focus + label,
+.acc label:hover {
+  background-color: #1ba678;
+}
+
+.acc-content {
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1.2rem;
+  transition: all .35s;
+}
+
+/*.acc-content {
+  margin-bottom: 0.5em;
+}*/
+
+.acc input:checked ~ .acc-content {
+  max-height: 7rem;
+  border-top: 1rem;
+  background-color: #97f3d5;
+  padding: 0.5rem 1.2rem;
+}
