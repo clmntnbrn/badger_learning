@@ -24,16 +24,17 @@
 .acc label {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
-  background: #22D69B;
+  background: #24272E;
   padding: 0.8rem 1.2rem;
   color: white;
   transition: background-color 0.5s ease;
   margin: 0;
+  border-bottom: .5px solid #5A6273;
 }
 
 .acc input:focus + label,
 .acc label:hover {
-  background-color: #1ba678;
+  background-color: #3A3F4A;
 }
 
 .acc-content {
@@ -51,6 +52,7 @@
 .acc input:checked ~ .acc-content {
   max-height: 7rem;
   border-top: 1rem;
-  background-color: #97f3d5;
+  background-color: #5A6273;
+  color: #ffffff;
   padding: 0.5rem 1.2rem;
 }
