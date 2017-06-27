@@ -1,3 +1,17 @@
+html {
+  --light-grey: #f8f8f8;
+  --light-grey-two: #5A6273;
+  --dark-grey: #3A3F4A;
+  --darkest-grey: #24272E;
+  --black: #212121;
+  --red: #FC1D42;
+  --white: #fff;
+  --light-green: #22D69B;
+  --dark-green: #1ba678;
+  --transparent-grey: rgba(0,0,0,0.05);
+}
+
+
 .acc-group {
   max-width: 30em;
   width: 100%;
@@ -24,17 +38,17 @@
 .acc label {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
-  background: #24272E;
+  background: var(--darkest-grey);
   padding: 0.8rem 1.2rem;
-  color: white;
-  transition: background-color 0.5s ease;
+  color: var(--white);
+  transition: 0.5s ease;
   margin: 0;
-  border-bottom: .5px solid #5A6273;
+  border-bottom: .5px solid var(--light-grey-two);
 }
 
 .acc input:focus + label,
 .acc label:hover {
-  background-color: #3A3F4A;
+  background-color: var(--dark-grey);
 }
 
 .acc-content {
@@ -52,8 +66,8 @@
 .acc input:checked ~ .acc-content {
   max-height: 7rem;
   border-top: 1rem;
-  background-color: #5A6273;
-  color: #ffffff;
+  background-color: var(--light-grey-two);
+  color: var(--white);
   padding: 0.5rem 1.2rem;
 }
 
