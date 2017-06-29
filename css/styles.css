@@ -44,6 +44,16 @@ html {
   font-weight: 400;
   color: #212121;
   font-family: 'Open Sans', sans-serif;
+  --light-grey: #f8f8f8;
+  --light-grey-two: #5A6273;
+  --dark-grey: #3A3F4A;
+  --darkest-grey: #24272E;
+  --black: #212121;
+  --red: #FC1D42;
+  --white: #fff;
+  --light-green: #22D69B;
+  --dark-green: #1ba678;
+  --transparent-grey: rgba(0,0,0,0.05);
 }
 
 /******************************************
@@ -54,8 +64,8 @@ html {
   max-width: 1210px;
   padding: 2rem 0 2rem 0;
   margin: 0 auto 0 auto;
-  background-color: #f8f8f8;
-  box-shadow: 0 0 1px 1px rgba(0,0,0,0.05);
+  background-color: var(--light-grey);
+  box-shadow: 0 0 1px 1px var(--transparent-grey);
 }
 
 .spacer{
@@ -80,11 +90,11 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-  text-decoration-color: #FC1D42
-  color: #FC1D42;
-}
+/*a:hover {*/
+  /*text-decoration: underline;*/
+  /*text-decoration-color: var(--red);
+  color: var(--red);*/
+/*}*/
 
 /*a:visited {
   color: #212121;
@@ -101,7 +111,7 @@ h1 {
   font-family: 'Bitter', serif;
   font-weight: 800;
   letter-spacing: .1rem;
-  color: #212121;
+  color: var(--black);
 }
 
 /******************************************
@@ -137,35 +147,34 @@ select,
 input {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  border-radius: 0px
+  border-radius: 0px;
   box-shadow: none;
-  border: 1.2px solid #212121;
+  border: 1.2px solid var(--black);
   height: 44px;
   width: 50%;
   margin-bottom: 1rem;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 button {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0px;
-  color: #f8f8f8;
+  color: var(--light-grey);
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
-  background: #22D69B;
+  background: var(--light-green);
   padding: 0.8rem 1.2rem;
   text-decoration: none;
   max-width: 200px;
   min-width: 150px;
   text-align: center;
-  transition: background 0.3s ease 0s;
   border: 0px;
   cursor: pointer;
 }
 
 button:hover {
-  background: #1ba678;
+  background: linear-gradient(to top right, var(--dark-green), var(--light-green));
   text-decoration: none;
 }
 
@@ -180,6 +189,28 @@ button:hover {
   vertical-align: middle;
   max-width: 3rem;
   margin-bottom: 0;
+}
+
+ins {
+  text-decoration: none;
+  position: relative;
+}
+
+ins:before {
+  content: "";
+  height: 1px;
+  background-color: var(--light-green);
+  width: 50%;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+ins:hover::before {
+  background-color: var(--dark-green);
+  transform: scaleX(2);
+  transform-origin: 0 0;
+  transition: transform 0.3s;
 }
 
 /******************************************
