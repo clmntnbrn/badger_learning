@@ -37,39 +37,61 @@
           </ul>
         </section>
         <section class="main column">
-          <label for="dropdown">This is a dropdown:</label>
-          <select name="dropdown" class="spacer">
-            <option value="value 1">Value 1</option>
-            <option value="value 2">Value 2</option>
-            <option value="value 3">Value 3</option>
-            <option value="value 4">Value 4</option>
-            <option value="value 5">Value 5</option>
-            <option value="value 6">Value 6</option>
-            <option value="value 7">Value 7</option>
-          </select>
-          <label for="button">This is a button:</label>
-          <button name="button" class="spacer">I'm a button</button>
-          <form class="spacer">
-            <label for="firstname">First name:</label>
-            <input type="text" name="firstname">
-            <label for="lastname">Last name:</label>
-            <input type="text" name="lastname">
-          </form>
-          <form class="spacer">
-            <label>This is a radio list:</label>
-            <div>
-              <input type="radio" class="radioButton" name="examplelist" value="You can only">
-              <label class="radioLabel" for="youcanonly">You can only</label>
-            </div>
-            <div>
-              <input type="radio" class="radioButton" name="examplelist" value="Select one">
-              <label class="radioLabel" for="radio2">Select one</label>
-            </div>
-            <div>
-              <input type="radio" class="radioButton" name="examplelist" value="From this list">
-              <label class="radioLabel" for="radio3">From this list</label>
-            </div>
-          </form>
+          <section>
+            <label for="dropdown">This is a dropdown:</label>
+            <select name="dropdown">
+              <option value="value 1">Value 1</option>
+              <option value="value 2">Value 2</option>
+              <option value="value 3">Value 3</option>
+              <option value="value 4">Value 4</option>
+              <option value="value 5">Value 5</option>
+              <option value="value 6">Value 6</option>
+              <option value="value 7">Value 7</option>
+            </select>
+          </section>
+          <section>
+            <label for="button">This is a button:</label>
+            <button name="button">I'm a button</button>
+          </section>
+          <section>
+            <form>
+              <fieldset>
+                <legend>Form Heading</legend>
+                <label for="firstname">First name:</label>
+                <input type="text" name="firstname">
+                <label for="lastname">Last name:</label>
+                <input type="text" name="lastname">
+            </fieldset>
+            </form>
+          </section>
+          <section class="form2">
+            <form>
+              <fieldset>
+                <legend>Form Heading</legend>
+                <label for="username"><i class="fa fa-user-o fa-fw"></i> User Name</label>
+                <input type="text" name="username">
+                <label for="password"><i class="fa fa-lock fa-fw"></i>Password</label>
+                <input type="text" name="password">
+              </fieldset>
+            </form>
+          </section>
+          <section>
+            <form>
+              <label>This is a radio list:</label>
+              <div>
+                <input type="radio" class="radioButton" name="examplelist" value="You can only">
+                <label class="radioLabel" for="youcanonly">You can only</label>
+              </div>
+              <div>
+                <input type="radio" class="radioButton" name="examplelist" value="Select one">
+                <label class="radioLabel" for="radio2">Select one</label>
+              </div>
+              <div>
+                <input type="radio" class="radioButton" name="examplelist" value="From this list">
+                <label class="radioLabel" for="radio3">From this list</label>
+              </div>
+            </form>
+          </section>
           <section class="acc-group">
             <p class="acc-title">Selecting individual accordions:</p>
               <div class="acc">
@@ -102,9 +124,9 @@
                   </div>
               </div>
             </div>
-          </section>
-        </section>
-      </section>
+          </section> <!-- END ACCORDION -->
+        </section> <!-- END MAIN SECTION -->
+      </section> <!-- END CONTAINER -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/index.js"></script>

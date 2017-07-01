@@ -68,8 +68,8 @@ html {
   box-shadow: 0 0 1px 1px var(--transparent-grey);
 }
 
-.spacer{
-  margin-bottom: 3rem;
+section {
+  margin-bottom: 4rem;
 }
 
 .main {
@@ -136,11 +136,21 @@ ul li {
 /* FORM ELEMENTS
 /*******************************************/
 
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  padding-bottom: 1rem;
+  font-size: 1.18rem;
+}
+
 label {
   /*font-size: 1rem;
   font-weight: 400;*/
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 select,
@@ -155,6 +165,34 @@ input {
   margin-bottom: 1rem;
   background-color: var(--white);
 }
+
+/******************************************
+/* FORM 2 ELEMENTS
+/*******************************************/
+
+
+.form2 input {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px
+  box-shadow: none;
+  border: none;
+  border-bottom: 0.8px solid black;
+  height: 44px;
+  width: 30rem;
+  margin-bottom: 4rem;
+  background-color: rgba(0,0,0,0);
+  color: black;
+  font-size: 0.8rem;
+}
+
+.form2 input:last-child {
+  margin-bottom: 1rem;
+}
+
+/******************************************
+/* BUTTON
+/*******************************************/
 
 button {
   -webkit-border-radius: 0;
@@ -178,6 +216,10 @@ button:hover {
   text-decoration: none;
 }
 
+/******************************************
+/* RADIO
+/*******************************************/
+
 .radioLabel {
   display: inline;
   margin-top: .5rem;
@@ -190,6 +232,10 @@ button:hover {
   max-width: 3rem;
   margin-bottom: 0;
 }
+
+/******************************************
+/* TEXT LINKS
+/*******************************************/
 
 ins {
   text-decoration: none;
