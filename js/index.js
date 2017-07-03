@@ -1,8 +1,8 @@
 $(document).ready(() => {
-  var inputs = document.querySelectorAll(".acc-group input");
+  var inputs = document.querySelectorAll(".acc-group input"); // array
 
   // Keep track of the selected radio button, initially there isn't one
-  var selected = null;
+  var selected = null;  // object
 
   inputs.forEach((i) => {
     // When an input is clicked
