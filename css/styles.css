@@ -174,7 +174,7 @@ input {
 .form2 input {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  border-radius: 0px
+  border-radius: 0px;
   box-shadow: none;
   border: none;
   border-bottom: 0.8px solid black;
