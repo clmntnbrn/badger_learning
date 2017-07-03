@@ -1,15 +1,15 @@
 $(document).ready(function() {
-
   var inputs = document.querySelectorAll(".acc-group input");
-  inputs[0].addEventListener("change", (e) => {
-    var clicked = e.target;
+  var selected = null;
 
-    if (clicked.checked) {
-      clicked.checked = false;
-      console.log("Uncheck");
-    } else {
-      console.log("Check");
-    }
+  inputs.forEach((i) => {
+    i.addEventListener("click", (e) => {
+      if (e.target === selected) {
+        e.target.checked = false;
+        selected = null;
+      } else {
+        selected = e.target;
+      };
+    });
   });
-
 });
