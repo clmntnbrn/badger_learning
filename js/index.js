@@ -1,4 +1,5 @@
-$(document).ready(() => {
+document.addEventListener("DOMContentLoaded", function(event) {
+    
   var inputs = document.querySelectorAll(".acc-group input"); // array
 
   // Keep track of the selected radio button, initially there isn't one
